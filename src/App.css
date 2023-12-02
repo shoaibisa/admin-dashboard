@@ -1,38 +1,91 @@
-.App {
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  margin: auto;
   text-align: center;
+  margin-top: 10rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+thead {
+  background-color: #f2f2f2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+}
+
+tr.selected {
+  background-color: #e0e0e0;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #13af18;
   color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+button.delete-selected {
+  background-color: #d4433e;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #45a049;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 4px;
+}
+
+.pagination button:hover {
+  background-color: #45a049;
+}
+
+.pagination input {
+  width: 40px;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-right: 4px;
+}
+
+.pagination input[type="text"] {
+  width: 60px;
+}
+
+.pagination label {
+  margin-right: 8px;
 }
